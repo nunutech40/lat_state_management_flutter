@@ -22,9 +22,7 @@ class _ModulPageState extends State<ModulPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DoneModuleList(
-                    doneModuleList: doneModuleList,
-                  ),
+                  builder: (context) => DoneModuleList(),
                 ),
               );
             },
@@ -32,9 +30,7 @@ class _ModulPageState extends State<ModulPage> {
           )
         ],
       ),
-      body: ModuleList(
-        doneModuleList: doneModuleList,
-      ),
+      body: ModuleList(),
     );
   }
 }
